@@ -38,6 +38,9 @@ export default {
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
     }
+</style>
+<style scoped>
+
     main {
         margin: 0 auto;
         padding: 30px;
@@ -64,5 +67,8 @@ export default {
     .logo {
         vertical-align: middle;
         height: 30px;
+    }
+    .content >>> .robot-name{
+        font-size: 1em;
     }
 </style>

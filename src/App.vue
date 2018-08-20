@@ -4,8 +4,10 @@
             <nav>
                 <ul>
                     <li class="nav-item">
-                        <img src="./assets/build-a-bot-logo.png" class="logo" alt="">
-                        Contruye tu robot
+                        <router-link class="nav-link" :to="{ name: 'Home'}">
+                            <img src="./assets/build-a-bot-logo.png" class="logo" alt="">
+                            Contruye tu robot
+                        </router-link>
                     </li>
                 </ul>
             </nav>
@@ -65,5 +67,9 @@ export default {
     }
     .content >>> .robot-name{
         font-size: 1em;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: inherit;
     }
 </style>

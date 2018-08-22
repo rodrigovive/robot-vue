@@ -223,6 +223,7 @@ export default {
     }
     .content{
         position: relative;
+        display: inherit;
     }
     .add-to-cart {
         position: absolute;

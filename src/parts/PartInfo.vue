@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>{{parts.title}}</h1>
+        <h1>{{partsSelected.title}}</h1>
         <div>
-            {{parts.description}}
+            {{partsSelected.description}}
         </div>
     </div>
 </template>
@@ -26,9 +26,9 @@ export default {
     },
   },
   computed: {
-    parts() {
+    partsSelected() {
       const { partType, id } = this;
-
+      console.log(partType, id);
       return this.parts[partType].find(part => part.id === +id);
     },
   },
